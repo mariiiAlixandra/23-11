@@ -5,6 +5,7 @@ document.querySelector("#btnSalvar").addEventListener("click", function(e){
     //adiciona o valor digitado em "txtTarefas" ao vetor 'tarefas' 
     tarefas.push(document.querySelector("#txtTarefa").value);
     //Limpa o conteudo do elemento com id 'lstTarefas'
+    document.querySelector("#txtTarefa").value = '';
     document.querySelector("#lstTarefas").innerHTML = '';
     //Percorre o s elementos do vetor 'tarefas'
     tarefas.forEach(item => {
